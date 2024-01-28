@@ -19,14 +19,17 @@
         {{ range $key, $value := $aboutPage.Params.affiliations }}
         <div class="row w-100 justify-content-center" id="title-name">
             <span class="main_color" id="title">
-                {{$value.affiliation.title}},
+                {{$value.affiliation.title}}
             </span>
             <span id="name" class="text-muted">
                 {{$value.affiliation.name}}
             </span>
         </div>
         <div class="row w-100 justify-content-center text-muted" id="email">
-            {{$value.affiliation.email}}
+            {{$value.affiliation.email1}}
+        </div>
+        <div class="row w-100 justify-content-center text-muted" id="email">
+            {{$value.affiliation.email2}}
         </div>
 
 
